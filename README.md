@@ -81,6 +81,7 @@ This directory contains scripts to bring up a sample Fabric network.
 ```bash
 cd test-network
 ```
+![img1](https://github.com/kushkumarkashyap7280/Blockchain/blob/92cc5a16e611d6347d63076adf013ccfda5200c3/cd%20fabric%20sample.jpg )
 
 ---
 
@@ -99,7 +100,7 @@ This will start a basic Fabric network with two organizations and their peers.
 ```bash
 ./network.sh up
 ```
-
+![img2 ](https://github.com/kushkumarkashyap7280/Blockchain/blob/92cc5a16e611d6347d63076adf013ccfda5200c3/network%20started.jpg)
 ---
 
 ## 11. Create a Channel
@@ -109,16 +110,16 @@ Once the network is up, create a channel to allow communication between peers.
 ```bash
 ./network.sh createChannel
 ```
-
+![img3](https://github.com/kushkumarkashyap7280/Blockchain/blob/92cc5a16e611d6347d63076adf013ccfda5200c3/channel%20created.jpg)
 ---
 
 ## 12. Shut Down the Network
 
-When you're done, tear down the running network to free resources.
+When  done, tear down the running network to free resources.
 
 ```bash
 ./network.sh down
 ```
-
+![imag4](https://github.com/kushkumarkashyap7280/Blockchain/blob/92cc5a16e611d6347d63076adf013ccfda5200c3/down%20network.jpg)
 ---
 
