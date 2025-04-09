@@ -232,4 +232,58 @@ Anyone with the link can view or download the video directly from the IPFS netwo
  ```
   ps aux | grep ipfs
    ```
+# Assignment 5: IPFS Privacy and Encryption
+
+This assignment demonstrates how to use the InterPlanetary File System (IPFS) along with OpenSSL to perform file encryption and ensure privacy via the command line.
+
+## Steps
+
+1. **Create a file to be added to IPFS**
+   ```bash
+   echo "Hello, IPFS!" > myfile.txt
+   ```
+
+2. **Add the original file to IPFS**
+   ```bash
+   ipfs add myfile.txt
+   ```
+   ![imag22](https://github.com/kushkumarkashyap7280/Blockchain/blob/fb34831ef59f55b8b365aca2a5688ec393824e7f/ecrypt%20file%20in%20dashboard.jpg)
+3. **Encrypt the file using OpenSSL (AES-256-CBC)**
+   ```bash
+   openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -in myfile.txt -out myfile_encrypted.txt -pass pass:yourpassword
+   ```
+
+4. **Add the encrypted file to IPFS**
+   ```bash
+   ipfs add myfile_encrypted.txt
+   ```
+
+5. **View the encrypted file (optional)**
+   ```bash
+   cat myfile_encrypted.txt
+   ```
+
+6. **Decrypt the file**
+   ```bash
+   openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 -in myfile_encrypted.txt -out decrypted_file.txt -pass pass:yourpassword
+   ```
+
+7. **Verify the decrypted file content**
+   ```bash
+   cat decrypted_file.txt
+   ```
+
+8. **Add the decrypted file to IPFS**
+   ```bash
+   ipfs add decrypted_file.txt
+   ```
+   ![imag23](https://github.com/kushkumarkashyap7280/Blockchain/blob/fb34831ef59f55b8b365aca2a5688ec393824e7f/encryption.jpg)
+   
+## Notes
+
+- Replace `yourpassword` with a strong, secure password of your choice.
+- Ensure that IPFS is properly installed and initialized before running these commands.
+
+---
+
 
