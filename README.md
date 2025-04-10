@@ -285,5 +285,64 @@ This assignment demonstrates how to use the InterPlanetary File System (IPFS) al
 - Ensure that IPFS is properly installed and initialized before running these commands.
 
 ---
+# 🔁 Web3 Wallet Transfer Test (SepoliaETH + MetaMask)
+
+This mini project demonstrates how to send **SepoliaETH** from one MetaMask wallet to another using the **Sepolia testnet**, ideal for testing Ethereum-based blockchain interactions without spending real ETH.
+
+---
+
+## 📦 What’s Inside
+
+- ✅ MetaMask setup and testnet config
+- ✅ Claimed 0.05 SepoliaETH from faucet
+- ✅ Transferred 0.02 SepoliaETH to another MetaMask wallet
+- ✅ Verified successful transfer via MetaMask & Sepolia Etherscan
+
+---
+
+## 🧪 Getting Started
+
+### 1. 🔐 Install MetaMask and account created 
+[Download MetaMask](https://metamask.io/) as a browser extension or mobile app and create two separate wallets.
+
+![imag24](https://github.com/kushkumarkashyap7280/Blockchain/blob/b3fb572ef02306eeaf1a1a30086251a47a11ef0d/metamask%20profile%20created.jpg)
+---
+
+### 2. 🌐 Enable Sepolia Test Network
+- Click the MetaMask network dropdown > **Show Test Networks**
+- Toggle ON in settings (Settings > Advanced > Show Test Networks)
+- Select **Sepolia** from the network list
+![imag25](https://github.com/kushkumarkashyap7280/Blockchain/blob/b3fb572ef02306eeaf1a1a30086251a47a11ef0d/select%20network.jpg)
+---
+
+### 3. 💸 Get SepoliaETH
+Use a Sepolia faucet like:
+
+- [Alchemy Sepolia Faucet](https://sepoliafaucet.com/)
+- [Google Cloud Sepolia Faucet](https://faucet.quicknode.com/ethereum/sepolia)
+
+Paste your **first wallet address** to receive **free test ETH**.
+![imag26](https://github.com/kushkumarkashyap7280/Blockchain/blob/cd1b87629b466056ff68ce5209c3875e094ab783/test%20token%20from%20sepolia%20faccet.jpg)
+---
+
+### 4. 🚀 Send ETH from Wallet 1 → Wallet 2
+![imag27](https://github.com/kushkumarkashyap7280/Blockchain/blob/cd1b87629b466056ff68ce5209c3875e094ab783/two%20accounts%20.jpg)
+1. In MetaMask, switch to your **Wallet 1**
+2. Click **Send**
+3. Paste **Wallet 2** address
+![imag28](https://github.com/kushkumarkashyap7280/Blockchain/blob/cd1b87629b466056ff68ce5209c3875e094ab783/sending%20a1%20to%20a2.jpg)
+4. Enter amount (e.g., `0.02`)
+5. Confirm and wait for the transaction
+![imag28](https://github.com/kushkumarkashyap7280/Blockchain/blob/cd1b87629b466056ff68ce5209c3875e094ab783/send%20status.jpg)
+
+---
+
+### 5. 🧾 Verify Transfer
+
+- Open **Wallet 2** in MetaMask (make sure it's also on Sepolia)
+- View the balance update
+![imag29](https://github.com/kushkumarkashyap7280/Blockchain/blob/cd1b87629b466056ff68ce5209c3875e094ab783/recieved.jpg)
+
+---
 
 
